@@ -31,3 +31,6 @@ Position MONEY NOT NULL CHECK(Position>=0) DEFAULT 0,
 Salary Money NOT NULL CHECK(Salary>=0),
 Surname NVARCHAR(MAX) NOT NULL CHECK(LEN(Surname)>0),
 );
+
+AlTER TABLE Teachers
+ADD Premium MONEY NOT NULL CHECK(Premium>0) DEFAULT 0
